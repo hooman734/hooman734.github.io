@@ -8,19 +8,51 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Calistoga|Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>Hooman Hesamyan</title>
     <style>
-      #vinteg {
-        background: url(background.jpg);
+      #garden {
+        background-image: url(background.jpg);
+        background-position: center;
         background-attachment: fixed;
+        background-size: contain;
+      }
+      #wood {
+        background-image: url(wood.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: contain;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+          0 12px 40px 0 rgba(0, 0, 0, 0.19);
+        margin: 5rem;
+      }
+      #text {
+        font-family: "Lobster", cursive;
+      }
+      #title {
+        font-family: "Calistoga", cursive;
+      }
+      img {
+        border: 2px solid rgb(110, 74, 74);
+      }
+      a {
+        color: black;
+      }
+      a :hover {
+        transform: scale(1.5);
+        margin-right: 1rem;
       }
     </style>
-  </head id="vinteg">
-  <body>
-    <div class="ui raised very padded text container segment">
+  </head>
+  <body id="garden">
+    <div class="ui raised very padded text container segment" id="wood">
       <div class="ui grid">
         <div class="ui row">
-          <h2 class="ui header">Hooman Hesamyan</h2>
+          <h1 class="ui header" id="title">Hooman Hesamyan</h1>
         </div>
         <div class="ui row">
           <div class="six wide column"></div>
@@ -33,22 +65,17 @@
           </div>
         </div>
         <div class="ui row">
-          <h4 class="ui header">Engineer&</h4>
+          <h3 class="ui header" id="text">Engineer&</h3>
+        </div>
+        <div class="ui row" id="text">
+          <h3 class="ui header" id="text">Computer Science Student</h3>
         </div>
         <div class="ui row">
-          <h4 class="ui header">Computer Science Student</h4>
-        </div>
-        <div class="ui row">
-          <h4 class="ui badge">
-            <a href="https://hooman734.github.io/resume" disabled="true"
-              >resume...</a
+          <h3 class="ui badge">
+            <a href="https://hooman734.github.io/cv"
+              ><i class="fas fa-id-card"></i> CV</a
             >
-          </h4>
-        </div>
-        <div class="ui row">
-          <h4 class="ui badge">
-            <a href="https://hooman734.github.io/cv">CV...</a>
-          </h4>
+          </h3>
         </div>
       </div>
     </div>
