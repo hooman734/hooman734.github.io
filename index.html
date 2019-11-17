@@ -16,13 +16,13 @@
     <title>Hooman Hesamyan</title>
     <style>
       #garden {
-        background-image: url(background2.jpg);
+        background-image: url(./images/background2.jpg);
         background-position: center;
         background-attachment: fixed;
         background-size: contain;
       }
       #wood {
-        background-image: url(wood2.jpg);
+        background-image: url(./images/wood2.jpg);
         background-position: center;
         background-attachment: fixed;
         background-size: contain;
@@ -42,9 +42,10 @@
       a {
         color: black;
       }
-      a :hover {
+      #title2 :hover {
         transform: scale(1.5);
         margin-right: 1rem;
+        color: inherit;
       }
     </style>
   </head>
@@ -59,21 +60,29 @@
           <div class="ten wide column">
             <img
               class="ui right medium circular image"
-              src="hooman.jpg"
+              src="./images/hooman.jpg"
               alt="profile image"
             />
           </div>
         </div>
+
         <div class="ui row">
           <h3 class="ui header" id="text">Engineer&</h3>
         </div>
-        <div class="ui row" id="text">
+        <div class="ui row">
           <h3 class="ui header" id="text">Computer Science Student</h3>
         </div>
-        <div class="ui row">
-          <h3 class="ui badge">
+        <div class="ui grid row">
+          <h3 class="ui badge" id="title2">
             <a href="https://hooman734.github.io/cv"
               ><i class="fas fa-id-card"></i> CV</a
+            >
+          </h3>
+        </div>
+        <div class="ui row">
+          <h3 class="ui badge" id="title2">
+            <a href="./assets/Hooman Hesamyan CV.pdf" download
+              ><i class="fas fa-file-pdf"></i> RESUME</a
             >
           </h3>
         </div>
