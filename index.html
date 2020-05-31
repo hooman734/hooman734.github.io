@@ -58,9 +58,34 @@
         margin-right: 1rem;
         color: #2c7873;
       }
+      .banner {
+        color: rgb(142, 35, 44);
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      
+      .banner-box {
+        
+        position: relative;
+      }
+      
     </style>
+    <script>
+      function blink_text() {
+        $('.blink').fadeOut(1000);
+        $('.blink').fadeIn(200);
+        }
+        setInterval(blink_text, 1000);
+    </script>
   </head>
   <body id="garden">
+    <!-- Add st -->
+    <a href="./assets/Hooman Hesamyan CV.pdf" >
+      <div class="ui floating message" class="banner-box" >
+        <p class="banner blink" >Click here in case of brevity to download my resume as a PDF file!</p>
+      </div>
+    </a>
+    <!-- cont'd -->
     <div class="ui raised very padded text container segment" id="wood">
       <div class="ui stackable two column grid">
           <div class="row">
